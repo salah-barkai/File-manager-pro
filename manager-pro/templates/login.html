@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Connexion{% endblock %}
+{% block content %}
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8">
+  <h2 class="text-3xl font-bold text-center mb-8">Connexion</h2>
+  <form method="POST">
+    <input type="text" name="username" placeholder="Nom d'utilisateur" required class="w-full px-4 py-3 border rounded mb-4">
+    <input type="password" name="password" placeholder="Mot de passe" required class="w-full px-4 py-3 border rounded mb-6">
+    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Se connecter</button>
+  </form>
+  <p class="text-center mt-4">Pas de compte ? <a href="/register" class="text-blue-600">S'inscrire</a></p>
+</div>
+{% endblock %}
